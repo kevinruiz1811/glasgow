@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
+    - export DEPLOYPATH=/home/b3y4z50jc4k6/public_html/
     - /bin/rsync -av public/ $DEPLOYPATH
