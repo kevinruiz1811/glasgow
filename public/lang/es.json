@@ -4,5 +4,39 @@
 		"briefcase": "Portafolio",
 		"about_us": "Acerca de nosotros",
 		"contact_us": "Contáctanos"
+	},
+	"header": {
+		"title": "¡Recibe una agradable bienvenida a nuestra página web!",
+		"paragraph": "ESTAMOS ENCANTADOS DE TENERTE AQUÍ",
+		"button": "QUIERO SABER MÁS"
+	},
+	"services": {
+		"title": "NUESTROS SERVICIOS",
+		"plumbing": "Plomería",
+		"roof_repairs": "Reparaciones de techos",
+		"home_repairs": "Reparaciones del hogar",
+		"drywall_sheets": "Láminas de Drywall",
+		"countertop": "Encimera",
+		"ceramics": "Cerámica",
+		"kitchen_installation": "Instalación de cocina",
+		"restore_wooden_floors": "Restaurar pisos de madera",
+		"stains_on_the_floors": "Manchas en los pisos",
+		"plaster": "Yeso",
+		"kitchen_renovation": "Renovación de cocinas",
+		"mold_remediation": "Remediación de moho",
+		"asbestos_remediation": "Remediación de amianto",
+		"button": "Ver",
+		"request": "Solicitar"
+	},
+	"portfolio": {
+		"title": "PORTAFOLIO",
+		"plumbing": "Plomería",
+		"floor_repair": "Reparación de pisos",
+		"repairs": "Reparaciones",
+		"renovations": "Renovaciones",
+		"humedity": "Humedad",
+		"home_repairs": "Reparaciones del hogar",
+		"after": "Después",
+		"before": "Antes"
 	}
 }

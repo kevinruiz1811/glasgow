@@ -4,5 +4,31 @@
 		"briefcase": "Portfolio",
 		"about_us": "About us",
 		"contact_us": "Contact us"
+	},
+	"header": {
+		"title": "Receive a pleasant welcome to our website!",
+		"paragraph": "WE ARE DELIGHTED TO HAVE YOU HERE",
+		"button": "I WANT TO KNOW MORE"
+	},
+	"services": {
+		"title": "OUR SERVICES",
+		"plumbing": "Plumbing",
+		"roof_repairs": "Roof repairs",
+		"home_repairs": "Home repairs",
+		"drywall_sheets": "Drywall sheets",
+		"countertop": "Countertop",
+		"ceramics": "Ceramics",
+		"kitchen_installation": "Kitchen installation",
+		"restore_wooden_floors": "Restore Wooden Floors",
+		"stains_on_the_floors": "Stains on the floors",
+		"plaster": "Plaster",
+		"kitchen_renovation": "Kitchen renovation",
+		"mold_remediation": "Mold remediation",
+		"asbestos_remediation": "Asbestos remediation",
+		"button": "I whish to see",
+		"request": "Request"
+	},
+	"portfolio": {
+		"title": "PORTFOLIO"
 	}
 }
