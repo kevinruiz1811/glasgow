@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="backStyles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+			rel="stylesheet" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Quicksand", sans-serif;
+			}
+
+			body {
+				min-height: 100vh;
+			}
+
+			.container {
+				position: relative;
+				width: 100%;
+				height: 100vh;
+				background: rgb(33, 37, 41);
+				overflow: hidden;
+			}
+
+			.burbujas {
+				position: relative;
+				display: flex;
+			}
+
+			.burbujas span {
+				position: relative;
+				width: 30px;
+				height: 30px;
+				background: #000000;
+				margin: 0 4px;
+				border-radius: 50%;
+				box-shadow: 0 0 0 10px #000000, 0 0 50px #000000, 0 0 100px #000000;
+				animation: animate 15s linear infinite;
+				animation-duration: calc(125s / var(--i));
+			}
+
+			.burbujas span:nth-child(even) {
+				background: #d90101;
+				box-shadow: 0 0 0 10px #d90101, 0 0 50px #d90101, 0 0 100px #d90101;
+			}
+
+			@keyframes animate {
+				0% {
+					transform: translateY(100vh) scale(0);
+				}
+
+				100% {
+					transform: translateY(-10vh) scale(1);
+				}
+			}
+
+			.contenedor-mensaje {
+				z-index: 1 !important;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: white;
+			}
+
+			.mensaje {
+				padding: 40px;
+			}
+
+			.toggle {
+				position: absolute;
+				width: 60px;
+				height: 60px;
+				background: rgb(247, 247, 247);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 10000;
+				border-radius: 50%;
+				cursor: pointer;
+				box-shadow: 0 5px 6px rgba(0, 0, 0, 0.15);
+				font-size: 2em;
+				transition: transform 1.25s;
+			}
+
+			.menu-redes.active .toggle {
+				transform: rotate(325deg);
+			}
+		</style>
+		<title>404 - Glasgow Company</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="contenedor-mensaje">
+				<div class="mensaje">
+					<h1 style="text-align: center">Error 400</h1>
+					<br />
+					<br />
+					<h2 style="text-align: center">
+						<a href="/public/" style="color: #000000; cursor: pointer">Home</a>
+					</h2>
+				</div>
+			</div>
+			<div class="burbujas">
+				<span style="--i: 11"></span>
+				<span style="--i: 12"></span>
+				<span style="--i: 24"></span>
+				<span style="--i: 10"></span>
+				<span style="--i: 14"></span>
+				<span style="--i: 23"></span>
+				<span style="--i: 18"></span>
+				<span style="--i: 16"></span>
+				<span style="--i: 19"></span>
+				<span style="--i: 20"></span>
+				<span style="--i: 22"></span>
+				<span style="--i: 25"></span>
+				<span style="--i: 18"></span>
+				<span style="--i: 21"></span>
+				<span style="--i: 15"></span>
+				<span style="--i: 13"></span>
+				<span style="--i: 26"></span>
+				<span style="--i: 17"></span>
+				<span style="--i: 13"></span>
+				<span style="--i: 28"></span>
+				<span style="--i: 11"></span>
+				<span style="--i: 12"></span>
+				<span style="--i: 24"></span>
+				<span style="--i: 10"></span>
+				<span style="--i: 14"></span>
+				<span style="--i: 23"></span>
+				<span style="--i: 18"></span>
+				<span style="--i: 16"></span>
+				<span style="--i: 19"></span>
+				<span style="--i: 20"></span>
+				<span style="--i: 22"></span>
+				<span style="--i: 25"></span>
+				<span style="--i: 18"></span>
+				<span style="--i: 21"></span>
+				<span style="--i: 15"></span>
+				<span style="--i: 13"></span>
+				<span style="--i: 26"></span>
+				<span style="--i: 17"></span>
+				<span style="--i: 13"></span>
+				<span style="--i: 28"></span>
+			</div>
+		</div>
+	</body>
+</html>

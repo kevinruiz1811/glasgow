@@ -7,9 +7,9 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta
 			name="description"
-			content="Somos una empresa con más de 15 años de experiencia en cuanto a la construcción y arreglos en viviendas y edificaciones." />
+			content="We are a company with more than 15 years of experience in the construction and repairs of homes and buildings." />
 		<meta name="author" content="Glasgow Inc." />
-		<title>Glasgow</title>
+		<title>Glasgow Company</title>
 		<!-- Favicon-->
 		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 		<!-- Font Awesome icons (free version)-->
@@ -53,24 +53,67 @@
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="#services">Servicios</a>
+							<a
+								class="nav-link"
+								href="#services"
+								data-section="menu"
+								data-value="services"
+								>Servicios</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">Portafolio</a>
+							<a
+								class="nav-link"
+								href="#portfolio"
+								data-section="menu"
+								data-value="briefcase"
+								>Portafolio</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">Acerca de nosotros</a>
+							<a
+								class="nav-link"
+								href="#about"
+								data-section="menu"
+								data-value="about_us"
+								>Acerca de nosotros</a
+							>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contáctanos</a>
+							<a
+								class="nav-link"
+								href="#contact"
+								data-section="menu"
+								data-value="contact_us"
+								>Contáctanos</a
+							>
 						</li>
+						<div id="flags">
+							<li class="nav-item">
+								<div class="flag__item">
+									<img
+										src="./assets/icons/es.svg"
+										alt="Spanish"
+										data-language="es" />
+								</div>
+							</li>
+							<li class="nav-item">
+								<div class="flag__item">
+									<img
+										src="./assets/icons/us.svg"
+										alt="English"
+										data-language="en" />
+								</div>
+							</li>
+						</div>
 					</ul>
 				</div>
 			</div>
 		</nav>
 		<!-- Masthead-->
-		<header class="masthead animate__animated animate__fadeInDown">
-			<div class="container container-header">
+		<header class="masthead parallax">
+			<div
+				class="container container-header animate__animated animate__fadeInDown">
 				<div class="masthead-subheading">
 					¡Recibe una agradable bienvenida a nuestra página web!
 				</div>
@@ -78,65 +121,303 @@
 					Estamos encantados de tenerte aquí
 				</div>
 			</div>
-			<div class="container">
+			<div class="container animate__animated animate__fadeInDown">
 				<a class="btn btn-danger btn-xl text-uppercase" href="#services"
 					>Quiero saber más</a
 				>
 			</div>
 		</header>
 		<!-- Services-->
-		<section
-			class="page-section wow animate__animated animate__fadeInUp"
-			id="services">
+		<section class="page-section no-parallax" id="services">
 			<div class="container">
-				<div class="text-center">
+				<div class="text-center wow animate__animated animate__fadeInUp">
 					<h2 class="section-heading text-uppercase">Nuestros servicios</h2>
 				</div>
-				<div class="row text-center">
-					<div class="col-md-4">
+				<div class="row text-center m-4">
+					<div class="col-md-4 wow animate__animated animate__fadeInLeft">
 						<span class="fa-stack fa-4x">
-							<i class="fas fa-circle fa-stack-2x text-primary"></i>
-							<i class="fas fa-solid fa-building fa-stack-1x fa-inverse"></i>
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-hammer fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="my-3">Construcción</h4>
+						<h4 class="my-3">Plomería</h4>
 						<p class="text-muted">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-							maxime quam architecto quo inventore harum ex magni, dicta
-							impedit.
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal1">
+								Ver
+							</button>
+							<a
+								target="_blank"
+								href="https://api.whatsapp.com/send?phone=573505827656&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20plomeria."
+								class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 wow animate__animated animate__fadeInDown">
 						<span class="fa-stack fa-4x">
-							<i class="fas fa-circle fa-stack-2x text-primary"></i>
-							<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-building-shield fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="my-3">Responsive Design</h4>
+						<h4 class="my-3">Reparaciones de techo</h4>
 						<p class="text-muted">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-							maxime quam architecto quo inventore harum ex magni, dicta
-							impedit.
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal3">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 wow animate__animated animate__fadeInLeft">
 						<span class="fa-stack fa-4x">
-							<i class="fas fa-circle fa-stack-2x text-primary"></i>
-							<i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-house-user fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="my-3">Web Security</h4>
+						<h4 class="my-3">Reparaciones del hogar</h4>
 						<p class="text-muted">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
-							maxime quam architecto quo inventore harum ex magni, dicta
-							impedit.
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal6">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+				</div>
+				<div class="row text-center m-4">
+					<div class="col-md-4 wow animate__animated animate__fadeInRight">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-trowel-bricks fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Láminas de Drywall</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal2">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-4 wow animate__animated animate__fadeInDown">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-table fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Encimeras</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal4">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-4 wow animate__animated animate__fadeInRight">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Cerámica</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal2">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+				</div>
+				<div class="row text-center m-4">
+					<div class="col-md-4 wow animate__animated animate__fadeInLeft">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-kitchen-set fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Instalación de cocina</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal4">
+								Ver
+							</button>
+							<a
+								target="_blank"
+								href="https://api.whatsapp.com/send?phone=573505827656&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20plomeria."
+								class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-4 wow animate__animated animate__fadeInDown">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-bath fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Renovación de baños</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal4">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-4 wow animate__animated animate__fadeInLeft">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-house-circle-check fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Restaurar pisos de madera</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal2">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+				</div>
+				<div class="row text-center m-4">
+					<div class="col-md-4 wow animate__animated animate__fadeInRight">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-house-circle-exclamation fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Manchas en los pisos</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal2">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-4 wow animate__animated animate__fadeInDown">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-trowel fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Yeso</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal1">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-4 wow animate__animated animate__fadeInRight">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i class="fas fa-solid fa-sink fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Renovación de cocinas</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal4">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+				</div>
+				<div class="row text-center m-4">
+					<div class="col-md-6 wow animate__animated animate__fadeInLeft">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-house-flood-water-circle-arrow-right fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Remediación de moho</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal5">
+								Ver
+							</button>
+							<a
+								target="_blank"
+								href="https://api.whatsapp.com/send?phone=573505827656&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20plomeria."
+								class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
+						</p>
+					</div>
+					<div class="col-md-6 wow animate__animated animate__fadeInRight">
+						<span class="fa-stack fa-4x">
+							<i class="fas fa-circle fa-stack-2x text-danger"></i>
+							<i
+								class="fas fa-solid fa-person-shelter fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="my-3">Remediación de amianto</h4>
+						<p class="text-muted">
+							<button
+								class="btn btn-primary"
+								data-bs-toggle="modal"
+								href="#portfolioModal5">
+								Ver
+							</button>
+							<a href="#" class="btn btn-success"
+								>Solicitar <i class="fa-brands fa-whatsapp"></i
+							></a>
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- Portfolio Grid-->
-		<section class="page-section bg-light wow animate__animated animate__fadeInTopLeft" id="portfolio">
+		<section class="page-section bg-light parallax" id="portfolio">
 			<div class="container">
 				<div class="text-center">
-					<h2 class="section-heading text-uppercase">Portfolio</h2>
+					<h2 class="section-heading text-uppercase">Portafolio</h2>
 				</div>
 				<div class="row">
 					<div class="col-lg-4 col-sm-6 mb-4">
@@ -157,7 +438,7 @@
 									alt="..." />
 							</a>
 							<div class="portfolio-caption">
-								<div class="portfolio-caption-heading">Construcción</div>
+								<div class="portfolio-caption-heading">Plomería</div>
 							</div>
 						</div>
 					</div>
@@ -179,7 +460,7 @@
 									alt="..." />
 							</a>
 							<div class="portfolio-caption">
-								<div class="portfolio-caption-heading">Remodelaciones</div>
+								<div class="portfolio-caption-heading">Reparación de pisos</div>
 							</div>
 						</div>
 					</div>
@@ -201,7 +482,77 @@
 									alt="..." />
 							</a>
 							<div class="portfolio-caption">
-								<div class="portfolio-caption-heading">Enchapes</div>
+								<div class="portfolio-caption-heading">Reparaciones</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<!-- Portfolio item 1-->
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal4">
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/portfolio/4.jpg"
+									alt="..." />
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Remodelaciones</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<!-- Portfolio item 2-->
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal5">
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/portfolio/5.jpg"
+									alt="..." />
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">Humedad</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 mb-4">
+						<!-- Portfolio item 3-->
+						<div class="portfolio-item">
+							<a
+								class="portfolio-link"
+								data-bs-toggle="modal"
+								href="#portfolioModal6">
+								<div class="portfolio-hover">
+									<div class="portfolio-hover-content">
+										<i class="fas fa-plus fa-3x"></i>
+									</div>
+								</div>
+								<img
+									class="img-fluid"
+									src="assets/img/portfolio/6.jpg"
+									alt="..." />
+							</a>
+							<div class="portfolio-caption">
+								<div class="portfolio-caption-heading">
+									Reparaciones en el hogar
+								</div>
 							</div>
 						</div>
 					</div>
@@ -209,11 +560,11 @@
 			</div>
 		</section>
 		<!-- About-->
-		<section class="page-section wow animate__animated animate__fadeInTopRight" id="about">
+		<section class="page-section no-parallax" id="about">
 			<div class="container">
 				<div class="text-center">
 					<h2 class="section-heading text-uppercase">Acerca de nosotros</h2>
-					<h3 class="section-subheading text-muted">Somos Glasgow</h3>
+					<h3 class="section-subheading text-muted">¿Quiénes somos?</h3>
 				</div>
 				<ul class="timeline">
 					<li class="wow animate__animated animate__fadeInLeft">
@@ -239,7 +590,8 @@
 							</div>
 						</div>
 					</li>
-					<li class="timeline-inverted wow animate__animated animate__fadeInRight">
+					<li
+						class="timeline-inverted wow animate__animated animate__fadeInRight">
 						<div class="timeline-image">
 							<img
 								class="rounded-circle img-fluid"
@@ -285,7 +637,8 @@
 							</div>
 						</div>
 					</li>
-					<li class="timeline-inverted wow animate__animated animate__fadeInRight">
+					<li
+						class="timeline-inverted wow animate__animated animate__fadeInRight">
 						<div class="timeline-image">
 							<img
 								class="rounded-circle img-fluid"
@@ -342,7 +695,7 @@
 			</div>
 		</section>
 		<!-- Contact-->
-		<section class="page-section wow animate__animated animate__zoomIn" id="contact">
+		<section class="page-section parallax" id="contact">
 			<div class="container">
 				<div class="text-center">
 					<h2 class="section-heading text-uppercase">Contáctanos</h2>
@@ -359,7 +712,7 @@
 									placeholder="Ingresa tu nombre *"
 									data-sb-validations="required" />
 								<div class="invalid-feedback" data-sb-feedback="name:required">
-									A name is required.
+									El nombre es requerido.
 								</div>
 							</div>
 							<div class="form-group">
@@ -371,10 +724,10 @@
 									placeholder="Ingresa tu correo electrónico *"
 									data-sb-validations="required,email" />
 								<div class="invalid-feedback" data-sb-feedback="email:required">
-									An email is required.
+									El correo electrónico es requerido.
 								</div>
 								<div class="invalid-feedback" data-sb-feedback="email:email">
-									Email is not valid.
+									Correo no válido.
 								</div>
 							</div>
 							<div class="form-group mb-md-0">
@@ -386,7 +739,7 @@
 									placeholder="Ingresa tu número telefónico *"
 									data-sb-validations="required" />
 								<div class="invalid-feedback" data-sb-feedback="phone:required">
-									A phone number is required.
+									El número de teléfono es requerido.
 								</div>
 							</div>
 						</div>
@@ -401,7 +754,7 @@
 								<div
 									class="invalid-feedback"
 									data-sb-feedback="message:required">
-									A message is required.
+									El mensaje es requerido.
 								</div>
 							</div>
 						</div>
@@ -437,182 +790,315 @@
 							target="_blank"
 							class="btn btn-dark btn-social mx-2"
 							href="https://www.instagram.com/glasgow_company/"
-							aria-label="LinkedIn">
+							aria-label="Instagram">
 							<i class="fa-brands fa-instagram"></i>
 						</a>
 					</div>
 				</div>
 			</div>
+			<a
+				href="https://api.whatsapp.com/send?phone=573505827656&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+				class="float"
+				target="_blank">
+				<i class="fa-brands fa-whatsapp my-float"></i>
+			</a>
 		</footer>
 		<!-- Portfolio Modals-->
 		<!-- Portfolio item 1 modal popup-->
 		<div
-			class="portfolio-modal modal fade"
+			class="modal fade modal-lg"
 			id="portfolioModal1"
 			tabindex="-1"
-			role="dialog"
+			aria-labelledby="exampleModalLabel"
 			aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="close-modal" data-bs-dismiss="modal">
-						<img src="assets/img/close-icon.svg" alt="Close modal" />
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Plomería</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
 					</div>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-8">
-								<div class="modal-body">
-									<!-- Project details-->
-									<h2 class="text-uppercase">Project Name</h2>
-									<p class="item-intro text-muted">
-										Lorem ipsum dolor sit amet consectetur.
-									</p>
-									<img
-										class="img-fluid d-block mx-auto"
-										src="assets/img/portfolio/1.jpg"
-										alt="..." />
-									<p>
-										Use this area to describe your project. Lorem ipsum dolor
-										sit amet, consectetur adipisicing elit. Est blanditiis
-										dolorem culpa incidunt minus dignissimos deserunt repellat
-										aperiam quasi sunt officia expedita beatae cupiditate,
-										maiores repudiandae, nostrum, reiciendis facere nemo!
-									</p>
-									<ul class="list-inline">
-										<li>
-											<strong>Client:</strong>
-											Threads
-										</li>
-										<li>
-											<strong>Category:</strong>
-											Illustration
-										</li>
-									</ul>
-									<button
-										class="btn btn-primary btn-xl text-uppercase"
-										data-bs-dismiss="modal"
-										type="button">
-										<i class="fas fa-xmark me-1"></i>
-										Close Project
-									</button>
-								</div>
-							</div>
+					<div class="modal-body row">
+						<p>
+							Instalamos y mantenemos sus redes de tubería para el
+							abastecimiento de agua potable y evacuación de aguas residuales.
+						</p>
+						<div class="col-md-6 mb-2">
+							<p class="item-intro text-muted text-center">Antes</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/before/1-before.jpg"
+								alt="..." />
 						</div>
+						<div class="col-md-6">
+							<p class="item-intro text-muted text-center">Después</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/after/1-after.jpg"
+								alt="..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Cerrar
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Portfolio item 2 modal popup-->
 		<div
-			class="portfolio-modal modal fade"
+			class="modal fade modal-lg"
 			id="portfolioModal2"
 			tabindex="-1"
-			role="dialog"
+			aria-labelledby="exampleModalLabel"
 			aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="close-modal" data-bs-dismiss="modal">
-						<img src="assets/img/close-icon.svg" alt="Close modal" />
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Pisos</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
 					</div>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-8">
-								<div class="modal-body">
-									<!-- Project details-->
-									<h2 class="text-uppercase">Project Name</h2>
-									<p class="item-intro text-muted">
-										Lorem ipsum dolor sit amet consectetur.
-									</p>
-									<img
-										class="img-fluid d-block mx-auto"
-										src="assets/img/portfolio/2.jpg"
-										alt="..." />
-									<p>
-										Use this area to describe your project. Lorem ipsum dolor
-										sit amet, consectetur adipisicing elit. Est blanditiis
-										dolorem culpa incidunt minus dignissimos deserunt repellat
-										aperiam quasi sunt officia expedita beatae cupiditate,
-										maiores repudiandae, nostrum, reiciendis facere nemo!
-									</p>
-									<ul class="list-inline">
-										<li>
-											<strong>Client:</strong>
-											Explore
-										</li>
-										<li>
-											<strong>Category:</strong>
-											Graphic Design
-										</li>
-									</ul>
-									<button
-										class="btn btn-primary btn-xl text-uppercase"
-										data-bs-dismiss="modal"
-										type="button">
-										<i class="fas fa-xmark me-1"></i>
-										Close Project
-									</button>
-								</div>
-							</div>
+					<div class="modal-body row">
+						<p>
+							Reparamos, instalamos y hacemos mantenimiento de manera
+							profesional todo tipo de piso, ya sea de madera, madera plástica,
+							etc.
+							<br />
+						</p>
+						<div class="col-md-6 mb-2">
+							<p class="item-intro text-muted text-center">Antes</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/before/2-before.jpg"
+								alt="..." />
 						</div>
+						<div class="col-md-6">
+							<p class="item-intro text-muted text-center">Después</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/after/2-after.jpg"
+								alt="..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Cerrar
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Portfolio item 3 modal popup-->
 		<div
-			class="portfolio-modal modal fade"
+			class="modal fade modal-lg"
 			id="portfolioModal3"
 			tabindex="-1"
-			role="dialog"
+			aria-labelledby="exampleModalLabel"
 			aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="close-modal" data-bs-dismiss="modal">
-						<img src="assets/img/close-icon.svg" alt="Close modal" />
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">
+							Reparaciones
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
 					</div>
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-8">
-								<div class="modal-body">
-									<!-- Project details-->
-									<h2 class="text-uppercase">Project Name</h2>
-									<p class="item-intro text-muted">
-										Lorem ipsum dolor sit amet consectetur.
-									</p>
-									<img
-										class="img-fluid d-block mx-auto"
-										src="assets/img/portfolio/3.jpg"
-										alt="..." />
-									<p>
-										Use this area to describe your project. Lorem ipsum dolor
-										sit amet, consectetur adipisicing elit. Est blanditiis
-										dolorem culpa incidunt minus dignissimos deserunt repellat
-										aperiam quasi sunt officia expedita beatae cupiditate,
-										maiores repudiandae, nostrum, reiciendis facere nemo!
-									</p>
-									<ul class="list-inline">
-										<li>
-											<strong>Client:</strong>
-											Finish
-										</li>
-										<li>
-											<strong>Category:</strong>
-											Identity
-										</li>
-									</ul>
-									<button
-										class="btn btn-primary btn-xl text-uppercase"
-										data-bs-dismiss="modal"
-										type="button">
-										<i class="fas fa-xmark me-1"></i>
-										Close Project
-									</button>
-								</div>
-							</div>
+					<div class="modal-body row">
+						<p>
+							Reparamos su inmueble con la finalidad de mantener el lugar en las
+							debidas condiciones de higiene sin afectar su estructura o
+							distribución interior.
+						</p>
+						<div class="col-md-6 mb-2">
+							<p class="item-intro text-muted text-center">Antes</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/before/3-before.jpg"
+								alt="..." />
 						</div>
+						<div class="col-md-6">
+							<p class="item-intro text-muted text-center">Después</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/after/3-after.jpg"
+								alt="..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Cerrar
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div
+			class="modal fade modal-lg"
+			id="portfolioModal4"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">
+							Remodelaciones
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body row">
+						<p>
+							Arreglamos, instalamos y remodelamos su baño y su cocina a su
+							gusto y necesidad.
+						</p>
+						<div class="col-md-6 mb-2">
+							<p class="item-intro text-muted text-center">Antes</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/before/4-before.jpg"
+								alt="..." />
+						</div>
+						<div class="col-md-6">
+							<p class="item-intro text-muted text-center">Después</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/after/4-after.jpg"
+								alt="..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade modal-lg"
+			id="portfolioModal5"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Humedad</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body row">
+						<p>
+							Ofrecemos un servicio profesional de geofonía para la detección de
+							fugas de agua para así evitar y arreglar la humedad en el lugar.
+						</p>
+						<div class="col-md-6 mb-2">
+							<p class="item-intro text-muted text-center">Antes</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/before/5-before.jpg"
+								alt="..." />
+						</div>
+						<div class="col-md-6">
+							<p class="item-intro text-muted text-center">Después</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/after/5-after.jpg"
+								alt="..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade modal-lg"
+			id="portfolioModal6"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">
+							Reparaciones en el hogar
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"></button>
+					</div>
+					<div class="modal-body row">
+						<p>
+							Arreglamos, instalamos y remodelamos su hogar a su gusto y
+							necesidad.
+						</p>
+						<div class="col-md-6 mb-2">
+							<p class="item-intro text-muted text-center">Antes</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/before/6-before.jpg"
+								alt="..." />
+						</div>
+						<div class="col-md-6">
+							<p class="item-intro text-muted text-center">Después</p>
+							<img
+								class="img-thumbnail"
+								src="assets/img/portfolio/after/6-after.jpg"
+								alt="..." />
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal">
+							Cerrar
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/home.js"></script>
 		<!-- Bootstrap core JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 		<!-- Core theme JS-->
@@ -625,5 +1111,23 @@
 		<script>
 			new WOW().init();
 		</script>
+
+		<!-- Código análisis de Godaddy -->
+		<script>
+			"undefined" === typeof _trfq || (window._trfq = []);
+			"undefined" === typeof _trfd && (window._trfd = []),
+				_trfd.push(
+					{ "tccl.baseHost": "$BASEHOST" },
+					{ ap: "$AP" },
+					{ server: "$HOSTNAME" },
+					{ dcenter: "$DCENTER" },
+					{ id: "$ID" },
+				);
+			// Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+		</script>
+		<script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
+		<script
+			src="https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"
+			onload="window.tti.calculateTTI()"></script>
 	</body>
 </html>
