@@ -1,7 +1,4 @@
 <?php
-var_dump("xd");
-die();
-
 // Obtiene los datos enviados desde JavaScript
 $data = json_decode(file_get_contents('php://input'), true);
 
