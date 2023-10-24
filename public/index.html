@@ -933,16 +933,12 @@
 						Contáctanos
 					</h2>
 				</div>
-				<form id="contactForm" data-sb-form-api-token="API_TOKEN">
+				<form id="contactForm">
 					<div class="row align-items-stretch mb-5">
 						<div class="col-md-6">
 							<div class="form-floating mb-3">
 								<!-- Name input-->
-								<input
-									class="form-control"
-									id="name"
-									type="text"
-									data-sb-validations="required" />
+								<input class="form-control" id="name" type="text" />
 								<label
 									for="name"
 									data-section="contact_us"
@@ -950,20 +946,16 @@
 									>Ingresa tu nombre *</label
 								>
 								<div
-									class="invalid-feedback"
-									data-sb-feedback="name:required"
+									id="requiredName"
 									data-section="contact_us"
-									data-value="requiredName">
+									data-value="requiredName"
+									style="display: none; color: red">
 									El nombre es requerido.
 								</div>
 							</div>
 							<div class="form-floating mb-3">
 								<!-- Email address input-->
-								<input
-									class="form-control"
-									id="email"
-									type="email"
-									data-sb-validations="required,email" />
+								<input class="form-control" id="email" type="email" />
 								<label
 									for="email"
 									data-section="contact_us"
@@ -971,27 +963,23 @@
 									>Ingresa tu correo electrónico *</label
 								>
 								<div
-									class="invalid-feedback"
-									data-sb-feedback="email:required"
+									id="requiredEmail"
 									data-section="contact_us"
-									data-value="requiredEmail">
+									data-value="requiredEmail"
+									style="display: none; color: red">
 									El correo electrónico es requerido.
 								</div>
 								<div
-									class="invalid-feedback"
-									data-sb-feedback="email:email"
+									id="validEmail"
 									data-section="contact_us"
-									data-value="validEmail">
+									data-value="validEmail"
+									style="display: none; color: red">
 									Correo no válido.
 								</div>
 							</div>
 							<div class="form-floating mb-3">
 								<!-- Phone number input-->
-								<input
-									class="form-control"
-									id="phone"
-									type="tel"
-									data-sb-validations="required" />
+								<input class="form-control" id="phone" type="tel" />
 								<label
 									for="phone"
 									data-section="contact_us"
@@ -999,10 +987,10 @@
 									>Ingresa tu número telefónico *</label
 								>
 								<div
-									class="invalid-feedback"
-									data-sb-feedback="phone:required"
+									id="requiredPhone"
 									data-section="contact_us"
-									data-value="requiredPhone">
+									data-value="requiredPhone"
+									style="display: none; color: red">
 									El número de teléfono es requerido.
 								</div>
 							</div>
@@ -1010,10 +998,7 @@
 						<div class="col-md-6">
 							<div class="form-floating mb-3 form-group-textarea">
 								<!-- Message input-->
-								<textarea
-									class="form-control"
-									id="message"
-									data-sb-validations="required"></textarea>
+								<textarea class="form-control" id="message"></textarea>
 								<label
 									for="message"
 									data-section="contact_us"
@@ -1021,10 +1006,10 @@
 									>Déjanos tu mensaje *</label
 								>
 								<div
-									class="invalid-feedback"
-									data-sb-feedback="message:required"
+									id="requiredMessage"
 									data-section="contact_us"
-									data-value="requiredMessage">
+									data-value="requiredMessage"
+									style="display: none; color: red">
 									El mensaje es requerido.
 								</div>
 							</div>
@@ -1032,14 +1017,13 @@
 					</div>
 					<!-- Submit Button-->
 					<div class="text-center">
-						<button
-							class="btn btn-primary btn-xl text-uppercase disabled"
+						<input
+							class="btn btn-primary btn-xl text-uppercase"
 							id="submitButton"
-							type="submit"
 							data-section="contact_us"
-							data-value="button">
-							Enviar
-						</button>
+							data-value="button"
+							type="submit"
+							value="Enviar" />
 					</div>
 				</form>
 			</div>
@@ -1474,6 +1458,7 @@
 			</div>
 		</div>
 		<script src="./js/home.js"></script>
+		<script src="./js/sendMail.js"></script>
 		<!-- Bootstrap core JS-->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 		<!-- Core theme JS-->
@@ -1486,23 +1471,5 @@
 		<script>
 			new WOW().init();
 		</script>
-
-		<!-- Código análisis de Godaddy -->
-		<script>
-			"undefined" === typeof _trfq || (window._trfq = []);
-			"undefined" === typeof _trfd && (window._trfd = []),
-				_trfd.push(
-					{ "tccl.baseHost": "$BASEHOST" },
-					{ ap: "$AP" },
-					{ server: "$HOSTNAME" },
-					{ dcenter: "$DCENTER" },
-					{ id: "$ID" },
-				);
-			// Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
-		</script>
-		<script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
-		<script
-			src="https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"
-			onload="window.tti.calculateTTI()"></script>
 	</body>
 </html>
