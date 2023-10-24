@@ -1,4 +1,7 @@
 <?php
+var_dump("xd");
+die();
+
 // Obtiene los datos enviados desde JavaScript
 $data = json_decode(file_get_contents('php://input'), true);
 
@@ -44,61 +47,20 @@ if ($data) {
     $mail->addAddress($email);
 
     $mail->IsHTML(true);
-    $mail->Subject = "H&A Medición de Riesgo Psicosocial xd";
-    $mail->Body = '<div style="text-align: justify">
-            <p style="margin-bottom: 25px">Bogotá DC. xd.</p>
-            <p style="margin-bottom: 25px">Respetado(a) Sr(a): ' . $name . '</p>
-            <p style="margin-bottom: 25px">Reciba un cordial saludo.</p>
-            <p style="margin-bottom: 25px">
-              Nos permitimos informarle que la firma <b>H&A CONSULTING</b> ha sido
-              contratado por su compañía para la realización de la
-              medición de riesgo psicosocial.
-            </p>
-            <p style="margin-bottom: 25px">
-              A continuación, encontrará el usuario y contraseña que le ha sido
-              asignado con los cuales usted podrá acceder a la plataforma para
-              diligenciar los xd cuestionarios,
-              <b
-                >recuerde que debe realizar todos los cuestionarios de forma continua
-                y no demorarse más de 20 minutos contestando 1 cuestionario debido a que el
-                sistema cuando detecta inactividad en la plataforma no guardará ' . $email . '
-                datos</b
-              >.
-            </p>
-            <p style="margin-bottom: 25px; border: 1px solid black; width: 400px">
-              Usuario: <b>xd/b> ' . $phone . '
-              <br />
-              Contraseña: <b>xd</b>
-            </p>
-            <p style="margin-bottom: 25px">
-              Antes de iniciar el proceso lo invitamos a ver el siguiente
-              <a
-                href="https://haconsultingeu.com/home/PGT/videoMRPS.php"
-                >video.</a
-              >
-            </p>
-            <p style="margin-bottom: 25px">
-              Una vez haya terminado de ver el video puede ingresar dando click
-              <a href="https://haconsultingeu.com/home/PGT/ingreso.php">aquí</a>,
-              donde digitará su usuario y contraseña. ' . $message . '
-            </p>
-            <p style="margin-bottom: 25px">
-              Para cualquier duda que tenga sobre el proceso puede comunicarse
-              mediante el correo electrónico: soporterps@haconsultingeu.com.co.
-            </p>
-            <p>Atentamente,</p>
-            <h5 style="color: #396dd1">H&A CONSULTING LTDA</h5>
-            <h5 style="color: #ed6e40">Adivising & Doing</h5>
-            <h3 style="color: red; text-align: center">
-              ESTE ES UN CORREO AUTOMÁTICO, POR FAVOR, NO RESPONDA.
-            </h3>
-            </div>';
+    $mail->Subject = "New website contact us message";
+    $mail->Body = '';
 
-    $correoEnviado = $mail->send();
+    $emailSend = $mail->send();
 
-    // Envia una respuesta de vuelta a JavaScript
-    $respuesta = ["mensaje" => "Datos recibidos correctamente"];
-    echo json_encode($correoEnviado);
+    if ($emailSend) {
+        // Envia una respuesta de vuelta a JavaScript
+        $respuesta = ["message" => "Datos recibidos correctamente"];
+        echo json_encode($respuesta);
+    } else {
+        // Maneja la falta de datos adecuadamente
+        http_response_code(500);
+        echo json_encode(["error" => "Error al enviar el correo electrónico"]);
+    }
 } else {
     // Maneja la falta de datos adecuadamente
     http_response_code(400);
