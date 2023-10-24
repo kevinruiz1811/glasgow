@@ -19,6 +19,7 @@
 		"countertop": "Countertop",
 		"ceramics": "Ceramics",
 		"kitchen_installation": "Kitchen installation",
+		"bathroom_renovation": "Bathroom renovation",
 		"restore_wooden_floors": "Restore Wooden Floors",
 		"stains_on_the_floors": "Stains on the floors",
 		"plaster": "Plaster",
@@ -26,9 +27,45 @@
 		"mold_remediation": "Mold remediation",
 		"asbestos_remediation": "Asbestos remediation",
 		"button": "I whish to see",
-		"request": "Request"
+		"request": "Request <i class='fa-brands fa-whatsapp'></i>"
 	},
 	"portfolio": {
-		"title": "PORTFOLIO"
+		"title": "PORTFOLIO",
+		"plumbing": "Plumbing",
+		"floor_repair": "Floor repair",
+		"repairs": "Repairs",
+		"renovations": "Renovations",
+		"humedity": "Humedity",
+		"home_repairs": "Home repairs",
+		"after": "After",
+		"before": "Before",
+		"descPlumbing": "We install and maintain your pipe networks for the supply of drinking water and wastewater evacuation.",
+		"descFloor": "We professionally repair, install and maintain all types of floors, whether made of wood, plastic wood, etc.",
+		"descRepairs": "We repair your property in order to keep the place in proper hygienic conditions without affecting its structure or interior distribution.",
+		"descRenovations": "We fix, install and remodel your bathroom and kitchen to your liking and needs.",
+		"descHumedity": "We offer a professional geophony service to detect water leaks to prevent and fix humidity in the area.",
+		"descHomeRepairs": "We fix, install and remodel your home to your liking and needs.",
+		"button": "Close"
+	},
+	"about_us": {
+		"title": "About us?",
+		"beginSubTitle": "Our beginning",
+		"beginParagraph": "It all started 20 years ago with a father's need to provide for his family; With limited resources he began painting apartments to rent to a company called Westdale Properties, who gave him the opportunity to paint units in a building in Toronto.",
+		"beginParagraph_2": "3 months later the father of the family was unemployed and to his surprise 2 days later they called to make some repairs on their properties, once they realized the contractor's capabilities; They offered the father a job, where to this day they have 19 years of experience in construction.",
+		"presentTitle": "Present",
+		"presentParagraph": "We have been Westdale Properties' #1 contractor for many years. On the other hand, starting with the St Catharines properties we expanded to Windsor Kingston Brockville and part of Toronto to this day.",
+		"mision": "Our mission",
+		"misionParagraph": "Offer the client quality in the renovation of all branches required within the construction, with their appropriate permits in order to have the units renovated in a minimum but effective delivery time. Linking our employees to belonging to the great Glasgow family, considering them an integral part of our projects and objectives to be met",
+		"vision": "Nuestra visión",
+		"visionParagraph": "In the next 4 years we seek to be recognized for the best quality, professionalism and punctuality in construction service; Likewise, continue to meet the objective of customer satisfaction in the areas of accessible value and minimum delivery time.",
+		"end": "We keep growing!"
+	},
+	"contact_us": {
+		"title": "CONTACT US",
+		"labelName": "Enter your name*",
+		"labelEmail": "Enter your email*",
+		"labelPhone": "Enter your phone number*",
+		"labelMessage": "Leave us your message",
+		"button": "Send"
 	}
 }

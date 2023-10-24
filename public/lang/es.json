@@ -19,6 +19,7 @@
 		"countertop": "Encimera",
 		"ceramics": "Cerámica",
 		"kitchen_installation": "Instalación de cocina",
+		"bathroom_renovation": "Renovación de baños",
 		"restore_wooden_floors": "Restaurar pisos de madera",
 		"stains_on_the_floors": "Manchas en los pisos",
 		"plaster": "Yeso",
@@ -26,7 +27,7 @@
 		"mold_remediation": "Remediación de moho",
 		"asbestos_remediation": "Remediación de amianto",
 		"button": "Ver",
-		"request": "Solicitar"
+		"request": "Solicitar <i class='fa-brands fa-whatsapp'></i>"
 	},
 	"portfolio": {
 		"title": "PORTAFOLIO",
@@ -37,6 +38,34 @@
 		"humedity": "Humedad",
 		"home_repairs": "Reparaciones del hogar",
 		"after": "Después",
-		"before": "Antes"
+		"before": "Antes",
+		"descPlumbing": "Instalamos y mantenemos sus redes de tubería para el abastecimiento de agua potable y evacuación de aguas residuales.",
+		"descFloor": "Reparamos, instalamos y hacemos mantenimiento de manera profesional todo tipo de piso, ya sea de madera, madera plástica, etc.",
+		"descRepairs": "Reparamos su inmueble con la finalidad de mantener el lugar en las debidas condiciones de higiene sin afectar su estructura o distribución interior.",
+		"descRenovations": "Arreglamos, instalamos y remodelamos su baño y su cocina a su gusto y necesidad.",
+		"descHumedity": "Ofrecemos un servicio profesional de geofonía para la detección de fugas de agua para así evitar y arreglar la humedad en el lugar.",
+		"descHomeRepairs": "Arreglamos, instalamos y remodelamos su hogar a su gusto y necesidad.",
+		"button": "Cerrar"
+	},
+	"about_us": {
+		"title": "¿Quiénes somos?",
+		"beginSubTitle": "Nuestro inicio",
+		"beginParagraph": "Todo comenzó hace 20 años con la necesidad de un padre para proveer a su familia; con recursos limitados comenzó a pintar apartamentos para rentar a una compañía llamada Westdale Properties, quienes le dieron la oportunidad de pintar unidades en un edificio en Toronto.",
+		"beginParagraph_2": "3 meses después el padre de la familia se quedó sin empleo y para su sorpresa 2 días después llamaron para realizar algunos arreglos en sus propiedades, una vez que se dieron cuenta de las capacidades de contratista; ofrecieron empleo al padre, donde hasta el día de hoy llevan 19 años de experiencia en construcción.",
+		"presentTitle": "Actualidad",
+		"presentParagraph": "Somos el contratista #1 de Westdale Properties por muchos años. Por otro lado, comenzando con las propiedades de St Catharines expandimos a Windsor Kingston brockville y parte de Toronto hasta el día de hoy.",
+		"mision": "Nuestra misión",
+		"misionParagraph": "Ofrecer al cliente calidad en la renovación de todas la ramas requeridas dentro de la construcción, con sus permisos adecuados para así poder tener las unidades renovadas en un tiempo mínimo pero efectivo de entrega. Vinculando a nuestros empleados al pertenecer a la gran familia Glasgow, considerándolos parte integral de nuestros proyectos y objetivos a cumplir",
+		"vision": "Nuestra visión",
+		"visionParagraph": "En los próximos 4 años se busca ser reconocidos por la mejor calidad, profesionalismo y puntualidad en el servicio de construcción; así mismo, continuar cumpliendo con el objetivo de la satisfacción del cliente en los ámbitos de valor accesible y un tiempo mínimo de entrega.",
+		"end": "¡Seguimos creciendo!"
+	},
+	"contact_us": {
+		"title": "CONTÁCTANOS",
+		"placeholderName": "Ingresa tu nombre*",
+		"placeholderEmail": "Ingresa tu correo electrónico",
+		"placeholderPhone": "Ingresa tu número de teléfono",
+		"placeholderMessage": "Déjanos tu mensaje",
+		"button": "Enviar"
 	}
 }
