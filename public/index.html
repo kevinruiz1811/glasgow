@@ -741,8 +741,18 @@
 		<section class="page-section no-parallax" id="about">
 			<div class="container">
 				<div class="text-center">
-					<h2 class="section-heading text-uppercase">Acerca de nosotros</h2>
-					<h3 class="section-subheading text-muted">¿Quiénes somos?</h3>
+					<h2
+						class="section-heading text-uppercase"
+						data-section="about_us"
+						data-value="about_us">
+						Acerca de nosotros
+					</h2>
+					<h3
+						class="section-subheading text-muted"
+						data-section="about_us"
+						data-value="title">
+						¿Quiénes somos?
+					</h3>
 				</div>
 				<ul class="timeline">
 					<li class="wow animate__animated animate__fadeInLeft">
@@ -755,10 +765,18 @@
 						<div class="timeline-panel">
 							<div class="timeline-heading">
 								<h4>2003</h4>
-								<h4 class="subheading">Nuestro inicio</h4>
+								<h4
+									class="subheading"
+									data-section="about_us"
+									data-value="beginSubTitle">
+									Nuestro inicio
+								</h4>
 							</div>
 							<div class="timeline-body">
-								<p class="text-muted">
+								<p
+									class="text-muted"
+									data-section="about_us"
+									data-value="beginParagraph">
 									Todo comenzó hace 20 años con la necesidad de un padre para
 									proveer a su familia; con recursos limitados comenzó a pintar
 									apartamentos para rentar a una compañía llamada Westdale
@@ -779,10 +797,18 @@
 						<div class="timeline-panel">
 							<div class="timeline-heading">
 								<h4>2003</h4>
-								<h4 class="subheading">Nuestro inicio</h4>
+								<h4
+									class="subheading"
+									data-section="about_us"
+									data-value="beginSubTitle">
+									Nuestro inicio
+								</h4>
 							</div>
 							<div class="timeline-body">
-								<p class="text-muted">
+								<p
+									class="text-muted"
+									data-section="about_us"
+									data-value="beginParagraph_2">
 									3 meses después el padre de la familia se quedó sin empleo y
 									para su sorpresa 2 días después llamaron para realizar algunos
 									arreglos en sus propiedades, una vez que se dieron cuenta de
@@ -803,10 +829,18 @@
 						<div class="timeline-panel">
 							<div class="timeline-heading">
 								<h4>2023</h4>
-								<h4 class="subheading">Actualidad</h4>
+								<h4
+									class="subheading"
+									data-section="about_us"
+									data-value="presentTitle">
+									Actualidad
+								</h4>
 							</div>
 							<div class="timeline-body">
-								<p class="text-muted">
+								<p
+									class="text-muted"
+									data-section="about_us"
+									data-value="presentParagraph">
 									Somos el contratista #1 de Westdale Properties por muchos
 									años. Por otro lado, comenzando con las propiedades de St
 									Catharines expandimos a Windsor Kingston brockville y parte de
@@ -825,10 +859,18 @@
 						</div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
-								<h4 class="subheading">Nuestra misión</h4>
+								<h4
+									class="subheading"
+									data-section="about_us"
+									data-value="mision">
+									Nuestra misión
+								</h4>
 							</div>
 							<div class="timeline-body">
-								<p class="text-muted">
+								<p
+									class="text-muted"
+									data-section="about_us"
+									data-value="misionParagraph">
 									Ofrecer al cliente calidad en la renovación de todas la ramas
 									requeridas dentro de la construcción, con sus permisos
 									adecuados para así poder tener las unidades renovadas en un
@@ -849,10 +891,18 @@
 						</div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
-								<h4 class="subheading">Nuestra visión</h4>
+								<h4
+									class="subheading"
+									data-section="about_us"
+									data-value="vision">
+									Nuestra visión
+								</h4>
 							</div>
 							<div class="timeline-body">
-								<p class="text-muted">
+								<p
+									class="text-muted"
+									data-section="about_us"
+									data-value="visionParagraph">
 									En los próximos 4 años se busca ser reconocidos por la mejor
 									calidad, profesionalismo y puntualidad en el servicio de
 									construcción; así mismo, continuar cumpliendo con el objetivo
@@ -864,7 +914,9 @@
 					</li>
 					<li class="timeline-inverted wow animate__animated animate__fadeInUp">
 						<div class="timeline-image">
-							<h4>¡Seguimos creciendo!</h4>
+							<h4 data-section="about_us" data-value="end">
+								¡Seguimos creciendo!
+							</h4>
 						</div>
 					</li>
 				</ul>
@@ -874,14 +926,23 @@
 		<section class="page-section parallax" id="contact">
 			<div class="container">
 				<div class="text-center">
-					<h2 class="section-heading text-uppercase">Contáctanos</h2>
+					<h2
+						class="section-heading text-uppercase"
+						data-section="contact_us"
+						data-value="title">
+						Contáctanos
+					</h2>
 				</div>
 				<form id="contactForm" data-sb-form-api-token="API_TOKEN">
 					<div class="row align-items-stretch mb-5">
 						<div class="col-md-6">
 							<div class="form-group">
 								<!-- Name input-->
-								<label style="color: white" for="name"
+								<label
+									style="color: white"
+									for="name"
+									data-section="contact_us"
+									data-value="labelName"
 									>Ingresa tu nombre *</label
 								>
 								<input
@@ -889,13 +950,21 @@
 									id="name"
 									type="text"
 									data-sb-validations="required" />
-								<div class="invalid-feedback" data-sb-feedback="name:required">
+								<div
+									class="invalid-feedback"
+									data-sb-feedback="name:required"
+									data-section="contact_us"
+									data-value="requiredName">
 									El nombre es requerido.
 								</div>
 							</div>
 							<div class="form-group">
 								<!-- Email address input-->
-								<label style="color: white" for="email"
+								<label
+									style="color: white"
+									for="email"
+									data-section="contact_us"
+									data-value="labelEmail"
 									>Ingresa tu correo electrónico *</label
 								>
 								<input
@@ -903,16 +972,28 @@
 									id="email"
 									type="email"
 									data-sb-validations="required,email" />
-								<div class="invalid-feedback" data-sb-feedback="email:required">
+								<div
+									class="invalid-feedback"
+									data-sb-feedback="email:required"
+									data-section="contact_us"
+									data-value="requiredEmail">
 									El correo electrónico es requerido.
 								</div>
-								<div class="invalid-feedback" data-sb-feedback="email:email">
+								<div
+									class="invalid-feedback"
+									data-sb-feedback="email:email"
+									data-section="contact_us"
+									data-value="validEmail">
 									Correo no válido.
 								</div>
 							</div>
 							<div class="form-group mb-md-0">
 								<!-- Phone number input-->
-								<label style="color: white" for="phone"
+								<label
+									style="color: white"
+									for="phone"
+									data-section="contact_us"
+									data-value="labelPhone"
 									>Ingresa tu número telefónico *</label
 								>
 								<input
@@ -920,7 +1001,11 @@
 									id="phone"
 									type="tel"
 									data-sb-validations="required" />
-								<div class="invalid-feedback" data-sb-feedback="phone:required">
+								<div
+									class="invalid-feedback"
+									data-sb-feedback="phone:required"
+									data-section="contact_us"
+									data-value="requiredPhone">
 									El número de teléfono es requerido.
 								</div>
 							</div>
@@ -928,7 +1013,11 @@
 						<div class="col-md-6">
 							<div class="form-group form-group-textarea mb-md-0">
 								<!-- Message input-->
-								<label style="color: white" for="message"
+								<label
+									style="color: white"
+									for="message"
+									data-section="contact_us"
+									data-value="labelMessage"
 									>Déjanos tu mensaje *</label
 								>
 								<textarea
@@ -937,7 +1026,9 @@
 									data-sb-validations="required"></textarea>
 								<div
 									class="invalid-feedback"
-									data-sb-feedback="message:required">
+									data-sb-feedback="message:required"
+									data-section="contact_us"
+									data-value="requiredMessage">
 									El mensaje es requerido.
 								</div>
 							</div>
@@ -948,7 +1039,9 @@
 						<button
 							class="btn btn-primary btn-xl text-uppercase disabled"
 							id="submitButton"
-							type="submit">
+							type="submit"
+							data-section="contact_us"
+							data-value="button">
 							Enviar
 						</button>
 					</div>
@@ -998,7 +1091,13 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">Plomería</h1>
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+							data-section="portfolio"
+							data-value="plumbing">
+							Plomería
+						</h1>
 						<button
 							type="button"
 							class="btn-close"
@@ -1006,7 +1105,7 @@
 							aria-label="Close"></button>
 					</div>
 					<div class="modal-body row">
-						<p>
+						<p data-section="portfolio" data-value="descPlumbing">
 							Instalamos y mantenemos sus redes de tubería para el
 							abastecimiento de agua potable y evacuación de aguas residuales.
 						</p>
@@ -1058,7 +1157,13 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">Pisos</h1>
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+							data-section="portfolio"
+							data-value="floors">
+							Pisos
+						</h1>
 						<button
 							type="button"
 							class="btn-close"
@@ -1066,7 +1171,7 @@
 							aria-label="Close"></button>
 					</div>
 					<div class="modal-body row">
-						<p>
+						<p data-section="portfolio" data-value="descFloor">
 							Reparamos, instalamos y hacemos mantenimiento de manera
 							profesional todo tipo de piso, ya sea de madera, madera plástica,
 							etc.
@@ -1120,7 +1225,11 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+							data-section="portfolio"
+							data-value="repairs">
 							Reparaciones
 						</h1>
 						<button
@@ -1130,7 +1239,7 @@
 							aria-label="Close"></button>
 					</div>
 					<div class="modal-body row">
-						<p>
+						<p data-section="portfolio" data-value="descRepairs">
 							Reparamos su inmueble con la finalidad de mantener el lugar en las
 							debidas condiciones de higiene sin afectar su estructura o
 							distribución interior.
@@ -1182,7 +1291,11 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+							data-section="portfolio"
+							data-value="renovations">
 							Remodelaciones
 						</h1>
 						<button
@@ -1192,7 +1305,7 @@
 							aria-label="Close"></button>
 					</div>
 					<div class="modal-body row">
-						<p>
+						<p data-section="portfolio" data-value="descRenovations">
 							Arreglamos, instalamos y remodelamos su baño y su cocina a su
 							gusto y necesidad.
 						</p>
@@ -1243,7 +1356,13 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">Humedad</h1>
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+							data-section="portfolio"
+							data-value="humedity">
+							Humedad
+						</h1>
 						<button
 							type="button"
 							class="btn-close"
@@ -1251,7 +1370,7 @@
 							aria-label="Close"></button>
 					</div>
 					<div class="modal-body row">
-						<p>
+						<p data-section="portfolio" data-value="descHumedity">
 							Ofrecemos un servicio profesional de geofonía para la detección de
 							fugas de agua para así evitar y arreglar la humedad en el lugar.
 						</p>
@@ -1302,7 +1421,11 @@
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="exampleModalLabel">
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+							data-section="portfolio"
+							data-value="home_repairs">
 							Reparaciones en el hogar
 						</h1>
 						<button
@@ -1312,7 +1435,7 @@
 							aria-label="Close"></button>
 					</div>
 					<div class="modal-body row">
-						<p>
+						<p data-section="portfolio" data-value="descHomeRepairs">
 							Arreglamos, instalamos y remodelamos su hogar a su gusto y
 							necesidad.
 						</p>

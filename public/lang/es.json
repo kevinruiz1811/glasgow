@@ -34,6 +34,7 @@
 		"plumbing": "Plomería",
 		"floor_repair": "Reparación de pisos",
 		"repairs": "Reparaciones",
+		"floors": "Pisos",
 		"renovations": "Renovaciones",
 		"humedity": "Humedad",
 		"home_repairs": "Reparaciones del hogar",
@@ -48,6 +49,7 @@
 		"button": "Cerrar"
 	},
 	"about_us": {
+		"about_us": "Acerca de nosotros",
 		"title": "¿Quiénes somos?",
 		"beginSubTitle": "Nuestro inicio",
 		"beginParagraph": "Todo comenzó hace 20 años con la necesidad de un padre para proveer a su familia; con recursos limitados comenzó a pintar apartamentos para rentar a una compañía llamada Westdale Properties, quienes le dieron la oportunidad de pintar unidades en un edificio en Toronto.",
@@ -62,10 +64,15 @@
 	},
 	"contact_us": {
 		"title": "CONTÁCTANOS",
-		"placeholderName": "Ingresa tu nombre*",
-		"placeholderEmail": "Ingresa tu correo electrónico",
-		"placeholderPhone": "Ingresa tu número de teléfono",
-		"placeholderMessage": "Déjanos tu mensaje",
+		"labelName": "Ingresa tu nombre *",
+		"requiredName": "El nombre es requerido.",
+		"labelEmail": "Ingresa tu correo electrónico *",
+		"requiredEmail": "El correo electrónico es requerido.",
+		"validEmail": "Correo no válido.",
+		"labelPhone": "Ingresa tu número de teléfono *",
+		"requiredPhone": "El número de teléfono es requerido.",
+		"labelMessage": "Déjanos tu mensaje *",
+		"requiredMessage": "El mensaje es requerido.",
 		"button": "Enviar"
 	}
 }

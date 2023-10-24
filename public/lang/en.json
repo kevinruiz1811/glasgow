@@ -34,6 +34,7 @@
 		"plumbing": "Plumbing",
 		"floor_repair": "Floor repair",
 		"repairs": "Repairs",
+		"floors": "Floors",
 		"renovations": "Renovations",
 		"humedity": "Humedity",
 		"home_repairs": "Home repairs",
@@ -48,6 +49,7 @@
 		"button": "Close"
 	},
 	"about_us": {
+		"about_us": "About us",
 		"title": "About us?",
 		"beginSubTitle": "Our beginning",
 		"beginParagraph": "It all started 20 years ago with a father's need to provide for his family; With limited resources he began painting apartments to rent to a company called Westdale Properties, who gave him the opportunity to paint units in a building in Toronto.",
@@ -56,16 +58,21 @@
 		"presentParagraph": "We have been Westdale Properties' #1 contractor for many years. On the other hand, starting with the St Catharines properties we expanded to Windsor Kingston Brockville and part of Toronto to this day.",
 		"mision": "Our mission",
 		"misionParagraph": "Offer the client quality in the renovation of all branches required within the construction, with their appropriate permits in order to have the units renovated in a minimum but effective delivery time. Linking our employees to belonging to the great Glasgow family, considering them an integral part of our projects and objectives to be met",
-		"vision": "Nuestra visión",
+		"vision": "Our vision",
 		"visionParagraph": "In the next 4 years we seek to be recognized for the best quality, professionalism and punctuality in construction service; Likewise, continue to meet the objective of customer satisfaction in the areas of accessible value and minimum delivery time.",
 		"end": "We keep growing!"
 	},
 	"contact_us": {
 		"title": "CONTACT US",
-		"labelName": "Enter your name*",
-		"labelEmail": "Enter your email*",
-		"labelPhone": "Enter your phone number*",
-		"labelMessage": "Leave us your message",
+		"labelName": "Enter your name *",
+		"requiredName": "Name is required.",
+		"labelEmail": "Enter your email *",
+		"requiredEmail": "Email is required.",
+		"validEmail": "Email invalid.",
+		"labelPhone": "Enter your phone number *",
+		"requiredPhone": "Phone number is required.",
+		"labelMessage": "Leave us your message *",
+		"requiredMessage": "Message is required.",
 		"button": "Send"
 	}
 }
