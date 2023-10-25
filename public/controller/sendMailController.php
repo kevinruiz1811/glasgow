@@ -44,7 +44,7 @@ if ($data) {
     $mail->addAddress($email);
 
     $mail->IsHTML(true);
-    $mail->Subject = "New website contact us message";
+    $mail->Subject = "<h1>New website contact us message</h1>";
     $mail->Body = '';
 
     $emailSend = $mail->send();
