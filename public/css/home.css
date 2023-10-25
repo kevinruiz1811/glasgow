@@ -42,3 +42,15 @@
 	cursor: pointer;
 	display: block;
 }
+
+.contact_us{
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.portfolio{
+	background-image: url('../assets/img/portfolio/bg-portfolio.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
